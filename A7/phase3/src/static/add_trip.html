@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	    <title>UTAXI</title>
+	    <meta charset="UTF-8">
+        <link rel="stylesheet" href="/common.css">
+
+</head>
+
+<body style="text-align: center;">
+    <h1>Add Trip</h1>
+        <form action="add_trip", method="post" style="background-color: lightgreen; padding: 1%; max-width: 400px; border-radius: 3px; margin: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <div class="container">
+                
+                <label for="username"><b>username</b></label>
+                <input type="username" placeholder="Enter username" name="username" required><br><br>
+                
+                <label for="origin"><b>origin</b></label>
+                <input type="text" placeholder="Enter origin" name="origin" required><br><br>
+                
+                <label for="destination"><b>destination</b></label>
+                <input type="text" placeholder="Enter destination" name="destination" required><br><br>
+
+                <b>in hurry : <b>
+                <input type="radio" name="in_hurry" value="yes" required>
+                <label>yes</label>
+                <input type="radio" name="in_hurry" value="no">
+                <label>no</label><br><br>
+
+                <input type="radio" name="action" value="add" required>
+                <label>Add Trip</label>
+                <input type="radio" name="action" value="cost">
+                <label>Get Cost</label><br><br>
+
+                <button type="submit" class="signupbtn">Add</button>
+            
+            </div>
+        </form>
+</body>
+</html>
